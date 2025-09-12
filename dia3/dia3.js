@@ -39,8 +39,19 @@ if(carreira == 1){
     carreira2 = "Full-Stack"
 }
 
+let tecnologias = prompt("Por fim, digite um tecnologia que você deseja aprender!")
 
-alert(`Então você, ${nome}, quer seguir uma área ${area2}, estudar ${materia2} e se desenvolver como ${carreira2}. Que ótimo!`);
+while(true){
+    add = prompt("Deseja incluir mais alguma tecnologia? Escreva caso deseje, caso não deseje mantenha o campo em branco.")
+    if(add == ""){
+        break
+    } else {
+        tecnologias += ", " + add;
+    }
+}
+
+
+alert(`Então você, ${nome}, quer seguir uma área ${area2}, estudar ${materia2} e se desenvolver como ${carreira2}. Além disso deseja aprender as tecnologias: ${tecnologias}. Que ótimo!`);
 
 
 
