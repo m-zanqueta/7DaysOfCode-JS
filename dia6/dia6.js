@@ -97,6 +97,7 @@ if(lista_congel.length == 0 && lista_doces.length == 0 && lista_frutas.length ==
     `Doces: ${lista_doces.join(", ")}`);
 } else{
     break;
+    
 }
 
 }
